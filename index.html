@@ -34,16 +34,16 @@
     <header class="max-w-[1440px] mx-auto">
         <nav class="flex w-full justify-between py-12">
             <img src="img/Logo.png" alt="">
-            <button class="text-xl py-3 px-6 text-[#252525] font-medium bg-[rgba(37,37,37,0.20)] rounded-lg">Sort by view</button>
+            <button id="sort-btn" onclick="sortBy()" class="text-xl py-3 px-6 text-[#252525] font-medium bg-[rgba(37,37,37,0.20)] rounded-lg">Sort by view</button>
             <button class="text-xl py-3 px-6 text-white font-medium bg-[#FF1F3D] rounded-lg">Blog</button>
         </nav>
         <hr>
         <!-- Button Section -->
-        <div class="text-lg font-medium gap-x-6 flex mt-8 justify-center">
-            <button class="px-5 py-2 bg-[rgba(37,37,37,0.15)] rounded-md">All</button>
+        <div id="catagory_Button_Section" class="text-lg font-medium gap-x-6 flex mt-8 justify-center">
+            <!-- <button class="px-5 py-2 bg-[rgba(37,37,37,0.15)] rounded-md">All</button>
             <button class="px-5 py-2 bg-[rgba(37,37,37,0.15)] rounded-md">Music</button>
             <button class="px-5 py-2 bg-[rgba(37,37,37,0.15)] rounded-md">Comedy</button>
-            <button class="px-5 py-2 bg-[rgba(37,37,37,0.15)] rounded-md">Drawing</button>
+            <button class="px-5 py-2 bg-[rgba(37,37,37,0.15)] rounded-md">Drawing</button> -->
         </div>
     </header>
     <!-- Header Section End -->
@@ -51,9 +51,9 @@
     <!-- Main Section Start -->
     <main>
         <!-- Video Section Start -->
-        <section class="max-w-[1440px] mx-auto grid grid-cols-4 mt-10 gap-x-6 gap-y-6">
+        <section id="video_section" class="max-w-[1440px] mx-auto grid grid-cols-4 mt-10 gap-x-6 gap-y-6">
             <!-- Per Video Section Start -->
-            <div class="h-[370px] border rounded-xl p-5">
+            <!-- <div class="h-[370px] border rounded-xl p-5">
                 <div class="relative">
                     <img class="w-[312px]" src="img/thanble.png" alt="">
                     <p class="bg-[#171717] text-white p-1 text-xs font-normal absolute bottom-0 right-0 rounded mr-4 mb-2">3hrs 56 min ago</p>
@@ -68,10 +68,17 @@
                         <p class="text-[rgba(23,23,23,0.70)]">91K views</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Per Video Section End -->
         </section>
         <!-- Video Section End -->
+
+        <!-- Nothing Found Section Start -->
+        <section id="nothing_found_section" class="hidden max-w-[1440px] mx-auto flex flex-col justify-center items-center mt-10 gap-x-6 gap-y-6">
+            <img src="img/Icon.png" alt="">
+            <h1 class="text-6xl font-bold">Nothing Found</h1>
+        </section>
+        <!-- Nothing Found Section End -->
     </main>
     <!-- Main Section End -->
 
